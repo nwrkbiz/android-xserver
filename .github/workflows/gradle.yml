@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
         if: ${{ !github.head_ref }}
         with:
           name: apk-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: demo/build/outputs/apk/debug/app-debug.apk
